@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_height="61dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tablayout展示"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/color_titlestate1"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabIndicatorHeight="1.5dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabGravity="center"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.example.administrator.tablayoutdemo.NoScrollViewPager
+        android:id="@+id/noscroll_viewpager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.example.administrator.tablayoutdemo.NoScrollViewPager>
+
+</LinearLayout>
