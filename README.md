@@ -1,7 +1,8 @@
 # TablayoutDemo
 android 端Tablayout加ViewPager的使用，三种adapter供参
- xml布局文件
-   <android.support.design.widget.TabLayout
+ xml布局文件通过tab属性可以设置tab字体颜色大小等
+ 
+     <android.support.design.widget.TabLayout
         android:id="@+id/tl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,5 +13,9 @@ android 端Tablayout加ViewPager的使用，三种adapter供参
         app:tabMode="scrollable"
         app:tabTextAppearance="@style/TabLayoutTextStyle"
         app:tabGravity="center"/>
-  
+  代码中主要通过三部设置就可以达到效果
+   
+        mTabLayout.setTabsFromPagerAdapter(mAdapter1);
+        mViewPager.setAdapter(mAdapter1);
+        mTabLayout.setupWithViewPager(mViewPager);
  
