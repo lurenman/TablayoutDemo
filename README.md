@@ -1,4 +1,7 @@
 # TablayoutDemo
+#导入依赖
+    
+    compile 'com.android.support:design:25.3.1'
 android 端Tablayout加ViewPager的使用，三种adapter供参
  xml布局文件通过tab属性可以设置tab字体颜色大小等
  
